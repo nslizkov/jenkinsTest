@@ -67,7 +67,7 @@ env
         }
         failure {
             echo "Это будет выполняться, если задача провалилась"
-            mail to: "andy280704@gmail.com",
+            mail to: "nikslizkov@gmail.com",
                  subject: "${env.JOB_NAME} – Сборка № ${env.BUILD_NUMBER} провалилась",
                  body: "Для получения дополнительной информации о провале пайплайна, проверьте консольный вывод по адресу ${env.BUILD_URL}"
         }
